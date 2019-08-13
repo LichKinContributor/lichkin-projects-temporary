@@ -42,6 +42,13 @@
 
     <!-- 定时任务模块 -->
     <module>lichkin-projects-temporary-quartz</module>
+
+    <!-- 特殊实现模块 -->
+    <module>lichkin-projects-api-GetEquipmentValue</module>
+    <module>lichkin-projects-api-GetLocationEquipmentList</module>
+    <module>toilet-apis</module>
+    <module>toilet-apis-launcher</module>
+    <module>toilet-monitor-launcher</module>
   </modules>
 
 </project>

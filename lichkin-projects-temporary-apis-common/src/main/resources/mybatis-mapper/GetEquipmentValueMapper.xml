@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lichkin.application.apis.GetEquipmentValue.M">
+  <select id="getValue" parameterType="com.lichkin.application.apis.GetEquipmentValue.I" resultType="com.lichkin.application.apis.GetEquipmentValue.O">
+    select
+      DATA_VALUE as 'dataValue', REMARKS as 'remarks'
+    from
+      t_sys_eqpt_data_${equipmentType}
+    where
+      EQUIPMENT_SID <![CDATA[ = ]]> '${equipmentSid}'
+    order by ID desc
+    limit 1
+  </select>
+</mapper>
